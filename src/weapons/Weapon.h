@@ -65,5 +65,7 @@ public:
 	bool Fire(CEntity*, CVector*);
 	void AddGunshell(CEntity*, CVector const&, CVector2D const&, float);
 	bool IsTypeMelee(void);
+
+	static void InitialiseWeapons(void);
 };
 static_assert(sizeof(CWeapon) == 0x18, "CWeapon: error");

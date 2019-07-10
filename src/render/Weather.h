@@ -33,7 +33,8 @@ public:
 	static bool &bScriptsForceRain;
 	static bool &Stored_StateStored;
 
+
+	static void Init();
 	static void RenderRainStreaks(void);
-	
 	static void ReleaseWeather();
 };

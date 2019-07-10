@@ -16,6 +16,7 @@ public:
 	RwRaster *m_pRaster;
 
 public:
+	static void Init(void);
 	static void Render(void);
 	static void ClearCrosshair();
 };

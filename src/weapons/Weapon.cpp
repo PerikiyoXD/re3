@@ -7,6 +7,8 @@
 WRAPPER bool CWeapon::Fire(CEntity*, CVector*) { EAXJMP(0x55C380); }
 WRAPPER void CWeapon::AddGunshell(CEntity*, CVector const&, CVector2D const&, float) { EAXJMP(0x55F770); }
 
+WRAPPER void CWeapon::InitialiseWeapons(){ EAXJMP(0x55C2D0); }
+
 void
 CWeapon::Initialise(eWeaponType type, int ammo)
 {

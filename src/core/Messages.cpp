@@ -2,6 +2,8 @@
 #include "patcher.h"
 #include "Messages.h"
 
+
+WRAPPER void CMessages::Init(void) { EAXJMP(0x529310); }
 WRAPPER void CMessages::Display(void) { EAXJMP(0x529800); }
 WRAPPER void CMessages::ClearAllMessagesDisplayedByGame(void) { EAXJMP(0x52B670); }
 WRAPPER int CMessages::WideStringCopy(wchar* dst, wchar* src, unsigned short size) { EAXJMP(0x5294B0); }

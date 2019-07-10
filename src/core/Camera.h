@@ -465,6 +465,10 @@ int     m_iModeObbeCamIsInForCar;
 	void SetWidescreenOff(void);
 
 	void dtor(void) { this->CCamera::~CCamera(); }
+
+	void Init();
+	void Process();
+	void SetRwCamera(RwCamera* camera);
 };
 static_assert(offsetof(CCamera, m_WideScreenOn) == 0x70, "CCamera: error");
 static_assert(offsetof(CCamera, WorldViewerBeingUsed) == 0x75, "CCamera: error");

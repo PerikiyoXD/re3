@@ -3,6 +3,7 @@
 class CSpecialFX
 {
 public:
+	static void Init(void);
 	static void Render(void);
 };
 

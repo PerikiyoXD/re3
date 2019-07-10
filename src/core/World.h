@@ -104,6 +104,9 @@ public:
 	static int GetSectorIndexY(float f) { return (int)GetSectorY(f); }
 	static float GetWorldX(int x) { return x*SECTOR_SIZE_X + WORLD_MIN_X; }
 	static float GetWorldY(int y) { return y*SECTOR_SIZE_Y + WORLD_MIN_Y; }
+	static void Initialise();
+	static void AddParticles();
+	static void RepositionCertainDynamicObjects();
 };
 
 class CPlayerPed;

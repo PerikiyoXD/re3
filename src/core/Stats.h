@@ -10,5 +10,6 @@ public:
 	static int32 &PeopleKilledByOthers;
 
 public:
+	static void Init();
 	static void AnotherKillFrenzyPassed();
 };

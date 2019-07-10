@@ -13,5 +13,6 @@ public:
 	~CPlane(void);
 	CPlane* ctor(int, uint8);
 	void FlagToDestroyWhenNextProcessed() { bRemoveFromWorld = true; }
+	static void InitPlanes();
 };
 static_assert(sizeof(CPlane) == 0x29C, "CPlane: error");

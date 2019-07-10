@@ -62,6 +62,7 @@ enum Config {
 	NUMONSCREENTIMERENTRIES = 1,
 	NUMRADARBLIPS = 32,
 	NUMPICKUPS = 336,
+	NUMPLAYERS = 1
 };
 
 // We'll use this once we're ready to become independent of the game

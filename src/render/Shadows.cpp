@@ -2,6 +2,7 @@
 #include "patcher.h"
 #include "Shadows.h"
 
+WRAPPER void CShadows::Init(void) { EAXJMP(0x512AB0); }
 WRAPPER void CShadows::AddPermanentShadow(uint8 ShadowType, RwTexture* pTexture, CVector* pPosn, float fX1, float fY1, float fX2, float fY2, short nTransparency, uint8 nRed, uint8 nGreen, uint8 nBlue, float fZDistance, uint32 nTime, float fScale) { EAXJMP(0x512FD0); }
 WRAPPER void CShadows::RenderStaticShadows(void) { EAXJMP(0x5145F0); }
 WRAPPER void CShadows::RenderStoredShadows(void) { EAXJMP(0x514010); }

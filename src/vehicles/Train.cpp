@@ -8,6 +8,7 @@ CTrain::CTrain(int mi, uint8 owner)
 }
 
 WRAPPER CTrain* CTrain::ctor(int, uint8) { EAXJMP(0x54E2A0); }
+WRAPPER void CTrain::InitTrains() { EAXJMP(0x54F000); }
 
 class CTrain_ : public CTrain
 {

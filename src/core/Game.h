@@ -31,7 +31,12 @@ public:
 	static void ShutDownForRestart(void);
 	static void Process(void);
 
+
+
 	// NB: these do something on PS2
 	static void TidyUpMemory(bool, bool) {}
 	static void DrasticTidyUpMemory(void) {}
 };
+
+bool CreateTxdImageForVideoCard(void);
+bool CheckVideoCardCaps(void);

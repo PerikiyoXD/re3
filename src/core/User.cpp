@@ -160,6 +160,16 @@ int COnscreenTimerEntry::ProcessForDisplayCounter() {
 	return sprintf(m_bCounterBuffer, "%d", counter);
 }
 
+WRAPPER void CUserDisplay::Init(void) { EAXJMP(0x435E20); }
+//
+//void __cdecl CUserDisplay::Init()
+//{
+//	//CUserDisplay::PlaceName.Init(&);
+//	//CUserDisplay::OnscnTimer.Init(&);
+//	//CUserDisplay::Pager.Init(&);
+//	//CUserDisplay::CurrentVehicle.Init(&);
+//}
+
 STARTPATCHES
 	InjectHook(0x429160, &COnscreenTimerEntry::Process, PATCH_JUMP);
 	InjectHook(0x429110, &COnscreenTimerEntry::ProcessForDisplay, PATCH_JUMP);

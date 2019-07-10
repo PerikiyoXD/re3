@@ -22,6 +22,9 @@ WRAPPER void CCamera::DrawBordersForWideScreen(void) { EAXJMP(0x46B430); }
 WRAPPER void CCamera::CalculateDerivedValues(void) { EAXJMP(0x46EEA0); }
 WRAPPER void CCamera::Restore(void) { EAXJMP(0x46F990); }
 WRAPPER void CCamera::SetWidescreenOff(void) { EAXJMP(0x46FF10); }
+WRAPPER void CCamera::Init() { EAXJMP(0x46BAD0); }
+WRAPPER void CCamera::Process() { EAXJMP(0x46D3F0); }
+WRAPPER void CCamera::SetRwCamera(RwCamera* camera) { EAXJMP(0x46FEC0); }
 
 bool
 CCamera::IsSphereVisible(const CVector &center, float radius, const CMatrix *mat)

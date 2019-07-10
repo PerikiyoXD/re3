@@ -26,7 +26,7 @@ struct tPreviousBrief
 	wchar *m_pString;
 };
 
-class CMessages 
+class CMessages
 {
 public:
 	static tPreviousBrief *PreviousBriefs;
@@ -34,6 +34,7 @@ public:
 	static tBigMessage *BIGMessages;
 
 public:
+	static void Init(void);
 	static void Display(void);
 	static void ClearAllMessagesDisplayedByGame(void);
 	static int WideStringCopy(wchar* dst, wchar* src, unsigned short size);

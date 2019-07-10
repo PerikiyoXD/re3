@@ -16,6 +16,7 @@ public:
 	static int32 &m_AllRandomPedsThisType;
 	static float &PedDensityMultiplier;
 
+	static void Initialise();
 	static void UpdatePedCount(uint32, bool);
 	static void DealWithZoneChange(eLevelName oldLevel, eLevelName newLevel, bool);
 	static CPed *AddPedInCar(CVehicle *vehicle);

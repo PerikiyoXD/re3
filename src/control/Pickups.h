@@ -36,6 +36,7 @@ class CPickup
 class CPickups
 {
 public:
+	static void Init(void);
 	static void RenderPickUpText(void);
 	static void DoCollectableEffects(CEntity *ent);
 	static void DoMoneyEffects(CEntity *ent);
@@ -48,5 +49,6 @@ public:
 class CPacManPickups
 {
 public:
+	static void Init(void);
 	static void Render(void);
 };

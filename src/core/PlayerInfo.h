@@ -67,6 +67,8 @@ public:
 	RwTexture *m_pSkinTexture;
 
 	void MakePlayerSafe(bool);
+	void Clear(void);
+	void LoadPlayerSkin(void);
 };
 
 static_assert(sizeof(CPlayerInfo) == 0x13C, "CPlayerInfo: error");

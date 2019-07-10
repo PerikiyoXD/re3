@@ -61,4 +61,5 @@ public:
 	static COnscreenTimer &OnscnTimer;
 	static CPager &Pager;
 	static CCurrentVehicle &CurrentVehicle;
+	static void Init();
 };

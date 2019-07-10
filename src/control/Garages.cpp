@@ -107,3 +107,5 @@ void CGarages::PrintMessages()
 	}
 }
 #endif
+
+WRAPPER void CGarages::Initialise(void) { EAXJMP(0x421C60); }

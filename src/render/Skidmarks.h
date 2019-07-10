@@ -3,6 +3,7 @@
 class CSkidmarks
 {
 public:
-	static void Clear(void);
+	static void Init(void);
 	static void Render(void);
+	static void Clear(void);
 };

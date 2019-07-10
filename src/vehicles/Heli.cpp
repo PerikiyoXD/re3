@@ -8,6 +8,7 @@ CHeli::CHeli(int mi, uint8 owner)
 }
 
 WRAPPER CHeli* CHeli::ctor(int, uint8) { EAXJMP(0x547220); }
+WRAPPER void CHeli::InitHelis(void) { EAXJMP(0x549970); }
 WRAPPER void CHeli::SpecialHeliPreRender(void) { EAXJMP(0x54AE10); }
 
 class CHeli_ : public CHeli

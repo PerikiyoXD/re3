@@ -8,6 +8,7 @@ CPlane::CPlane(int mi, uint8 owner)
 }
 
 WRAPPER CPlane* CPlane::ctor(int, uint8) { EAXJMP(0x54B170); }
+WRAPPER void CPlane::InitPlanes() { EAXJMP(0x54B820); }
 
 CPlane::~CPlane()
 {

@@ -10,6 +10,7 @@ class CCutsceneMgr
 public:
 	static CDirectory *&ms_pCutsceneDir;
 
+	static void Initialise();
 	static bool IsRunning(void) { return ms_running; }
 	static bool IsCutsceneProcessing(void) { return ms_cutsceneProcessing; }
 };

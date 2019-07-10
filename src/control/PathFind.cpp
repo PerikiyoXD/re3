@@ -1,5 +1,6 @@
 #include "common.h"
 #include "patcher.h"
+
 #include "PathFind.h"
 
 CPathFind &ThePaths = *(CPathFind*)0x8F6754;
@@ -627,6 +628,8 @@ CPathFind::CalcNodeCoors(int16 x, int16 y, int16 z, int id, CVector *out)
 }
 
 WRAPPER void CPathFind::SetLinksBridgeLights(float, float, float, float, bool) { EAXJMP(0x42E3B0); }
+WRAPPER void CPathFind::Init(void) { EAXJMP(0x4294A0); }
+WRAPPER void CPathFind::AllocatePathFindInfoMem(int) { EAXJMP(0x42D580); }
 
 STARTPATCHES
 	InjectHook(0x429610, &CPathFind::PreparePathData, PATCH_JUMP);

@@ -300,7 +300,7 @@ public:
 	static void Init();
 	static CRunningScript* StartNewScript(uint32);
 	static void Process();
-	static CRunningScript* StartTestScript();
+	static void StartTestScript();
 	static bool IsPlayerOnAMission();
 
 	static void ReadObjectNamesFromScript();

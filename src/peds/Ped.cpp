@@ -24,6 +24,8 @@
 #include "Lights.h"
 #include "PointLights.h"
 #include "Pad.h"
+#include "PathFind.h" 
+#include "EventList.h"
 
 WRAPPER void CPed::KillPedWithCar(CVehicle *veh, float impulse) { EAXJMP(0x4EC430); }
 WRAPPER void CPed::Say(uint16 audio) { EAXJMP(0x4E5A10); }
@@ -1438,6 +1440,19 @@ CPed::PedSetDraggedOutCarCB(CAnimBlendAssociation *dragAssoc, void *arg)
 	}
 	ped->m_nStoredActionState = 0;
 	ped->m_ped_flagI4 = false;
+}
+
+WRAPPER void CPed::LoadFightData() { EAXJMP(0x4E9870); }
+WRAPPER void CPed::SetAnimOffsetForEnterOrExitVehicle() { EAXJMP(0x4E2260); }
+
+void
+CPed::Initialise()
+{
+	debug("Initialising CPed...\n");
+	CPedType::Initialise();
+	CPed::LoadFightData();
+	CPed::SetAnimOffsetForEnterOrExitVehicle();
+	debug("CPed ready\n");
 }
 
 void

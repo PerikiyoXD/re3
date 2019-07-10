@@ -609,6 +609,10 @@ CWorld::FindRoofZFor3DCoord(float x, float y, float z, bool *found)
 	}
 }
 
+WRAPPER void CWorld::Initialise(void) { EAXJMP(0x4AE410); }
+WRAPPER void CWorld::AddParticles(void) { EAXJMP(0x4B4010); }
+WRAPPER void CWorld::RepositionCertainDynamicObjects(void) { EAXJMP(0x4B42B0); }
+
 CPlayerPed*
 FindPlayerPed(void)
 {

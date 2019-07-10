@@ -32,7 +32,7 @@ enum {
 class CGangs
 {
 public:
-	static void Initialize(void);
+	static void Initialise(void);
 	static void SetGangVehicleModel(int16, int);
 	static void SetGangWeapons(int16, eWeaponType, eWeaponType);
 	static void SetGangPedModelOverride(int16, int8);

@@ -6,4 +6,5 @@ class CTrafficLights
 {
 public:
 	static void DisplayActualLight(CEntity *ent);
+	static void ScanForLightsOnMap();
 };

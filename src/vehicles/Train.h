@@ -21,5 +21,6 @@ public:
 
 	CTrain(int, uint8);
 	CTrain* ctor(int, uint8);
+	static void InitTrains();
 };
 static_assert(sizeof(CTrain) == 0x2E4, "CTrain: error");

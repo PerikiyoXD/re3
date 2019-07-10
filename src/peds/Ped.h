@@ -460,6 +460,9 @@ public:
 
 
 	// Static methods
+	static void Initialise();
+	static void LoadFightData();
+	static void SetAnimOffsetForEnterOrExitVehicle();
 	static void GetLocalPositionToOpenCarDoor(CVector *output, CVehicle *veh, uint32 enterType, float offset);
 	static void GetPositionToOpenCarDoor(CVector *output, CVehicle *veh, uint32 enterType, float seatPosMult);
 	static void GetPositionToOpenCarDoor(CVector* output, CVehicle* veh, uint32 enterType);

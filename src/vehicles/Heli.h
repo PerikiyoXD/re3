@@ -10,7 +10,7 @@ public:
 
 	CHeli(int, uint8);
 	CHeli* ctor(int, uint8);
-
+	static void InitHelis();
 	static void SpecialHeliPreRender(void);
 };
 static_assert(sizeof(CHeli) == 0x33C, "CHeli: error");

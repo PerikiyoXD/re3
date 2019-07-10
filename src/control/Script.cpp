@@ -614,9 +614,9 @@ void CTheScripts::Process()
 	DbgFlag = false;
 }
 
-CRunningScript* CTheScripts::StartTestScript()
+void CTheScripts::StartTestScript()
 {
-	return StartNewScript(0);
+	StartNewScript(0);
 }
 
 bool CTheScripts::IsPlayerOnAMission()
